@@ -177,7 +177,7 @@ if uploaded_file is not None:
 
     col1, col2, col3 = st.columns(3)
     with col1:
-        n_groups = st.number_input("🔢 分组数量", min_value=2, max_value=10, value=2, step=1)
+        n_groups = st.number_input("🔢 分组数量", min_value=2, max_value=50, value=2, step=1)
     with col2:
         n_restarts = st.number_input("🔄 局部微调次数", min_value=10, max_value=100, value=30, step=5)
     with col3:
